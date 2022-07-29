@@ -1,8 +1,7 @@
 # Load Balancer
 Very simples HTTP/TCP Load Balancer.
-Implemented in Python3, single thread, using OS selector.
+Single thread, using OS selector.
 The code contains 4 classes that implement different strategies to select the next back-end server:
-
 1. **N to 1:** all the requests are routed to a single server
 2. **Round Robin:** the requests are routed to all servers in sequence
 3. **Least Connections:** the request is routed to the server with fewer processed connections
